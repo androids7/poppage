@@ -26,14 +26,13 @@ public class MainActivity extends AppCompatActivity  {
 	private List<Object> list;
 	
 	
-	private ImageView home,message,add,search,work, care,remen,homeshow;
+	private ImageView home,message,add,search,work;
 	/*
 	private Thread td;
 	
 	private Handler hd;
 	*/
 	
-	private boolean isRemen=true;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity  {
 		
 		//requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
+		getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 		
 		
@@ -199,44 +199,12 @@ public class MainActivity extends AppCompatActivity  {
 		search=(ImageView)findViewById(R.id.activitymainImageViewsearch);
 		
 		work=(ImageView)findViewById(R.id.activitymainImageViewwork);
-
-		if(mAFragment.getDiyView()!=null){
-			
 		
 		
 		
-		care=(ImageView)mAFragment.getDiyView(). findViewById(R.id.fragmentaImageViewcare);
-
-		homeshow=(ImageView)mAFragment.getDiyView().findViewById(R.id.fragmentaImageViewhomeshow);
-
-		remen=(ImageView)mAFragment.getDiyView().findViewById(R.id.fragmentaImageViewremen);
 		
-		checkRemen();
-		ts("no error");
-		}
 		
-		/*
-		remen.setOnClickListener(new OnClickListener(){
-				public void onClick(View v)
-				{
-					isRemen=true;
-					checkRemen();
-				}
-
-			});
-
-
-
-		care.setOnClickListener(new OnClickListener(){
-				public void onClick(View v)
-				{
-					isRemen=false;
-					checkRemen();
-				}
-
-			});
 		
-		*/
 		
 		home.setColorFilter(Color.argb(25,0,100,100));
 		
@@ -396,21 +364,5 @@ public class MainActivity extends AppCompatActivity  {
 	
 	*/
 	
-	public void checkRemen(){
-	
-	if (isRemen==true)
-	{
-		remen.setImageResource(R.drawable.remen_yellow);
-		care.setImageResource(R.drawable.care);
-		homeshow.setImageResource(R.drawable.hot);
-
-	} else{
-		remen.setImageResource(R.drawable.remen);
-		care.setImageResource(R.drawable.care_yellow);
-		homeshow.setImageResource(R.drawable.care_about);
-	}
-
-	
-	}
 	
 }

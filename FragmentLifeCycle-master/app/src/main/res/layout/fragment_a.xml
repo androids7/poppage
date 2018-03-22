@@ -8,28 +8,29 @@
 	<LinearLayout
 		android:layout_height="45dp"
 		android:layout_width="match_parent"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:gravity="center">
 
 		<ImageView
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
+			android:layout_width="100dp"
 			android:src="@drawable/frame_left"/>
 
 		<ImageView
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
+			android:layout_width="70dp"
 			android:src="@drawable/remen_yellow"
 			android:id="@+id/fragmentaImageViewremen"/>
 
 		<ImageView
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
+			android:layout_width="70dp"
 			android:src="@drawable/care"
 			android:id="@+id/fragmentaImageViewcare"/>
 
 		<ImageView
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
+			android:layout_width="100dp"
 			android:src="@drawable/frame_right"/>
 
 	</LinearLayout>
