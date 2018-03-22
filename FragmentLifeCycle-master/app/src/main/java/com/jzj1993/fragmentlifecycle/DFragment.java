@@ -8,31 +8,24 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by jzj on 16/9/5.
+ * Created by androids7 on 18/3/22.
  */
-public class AFragment extends BaseVisibilityFragment {
+public class DFragment extends BaseVisibilityFragment {
 
-	private View view;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fragment_a, container, false);
-		return view;
+        return inflater.inflate(R.layout.fragment_d, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // startActivity(new Intent(getContext(), NewActivity.class));
-            }
-        });
+				@Override
+				public void onClick(View v) {
+					//startActivity(new Intent(getContext(), NewActivity.class));
+				}
+			});
     }
-	
-	public View getDiyView()
-	{
-		return view;
-	}
 }

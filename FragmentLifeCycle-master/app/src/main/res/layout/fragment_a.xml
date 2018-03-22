@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImageView
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:src="@drawable/hot"/>
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="45dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/frame_left"/>
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/remen_yellow"
+			android:id="@+id/fragmentaImageViewremen"/>
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/care"
+			android:id="@+id/fragmentaImageViewcare"/>
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/frame_right"/>
+
+	</LinearLayout>
+
+	<ImageView
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/hot"
+		android:id="@+id/fragmentaImageViewhomeshow"/>
+
+</LinearLayout>
 
